@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Simple class for converting base set of numbers with a customize
 character base set.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Prosta klasa do konwersji liczb miêdzy ró¿nymi systemami liczenia z
