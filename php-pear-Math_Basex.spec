@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Math
 %define		_subclass	Basex
-%define		_status		stable
+%define		_status		beta
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Base X conversion class
 Summary(pl):	%{_class}_%{_subclass} - klasa konwersji miêdzy systemami liczenia Base X
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	267d6eecd0d917994f143feb69f7028f
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	4cfe8184e596c0d2fb399581e457d4ce
 URL:		http://pear.php.net/package/%{_pearname}/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -45,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/tests/*
+%doc %{_pearname}-%{version}/tests
 %{php_pear_dir}/%{_class}/*.php
