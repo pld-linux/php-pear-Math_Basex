@@ -1,11 +1,13 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Math
 %define		_subclass	Basex
+%define		_status		stable
+
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Base X conversion class
 Summary(pl):	%{_class}_%{_subclass} - klasa konwersji miêdzy systemami liczenia Base X
 Name:		php-pear-%{_pearname}
-Version:	0.1
+Version:	0.2
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -20,9 +22,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Simple class for converting base set of numbers with a customize
 character base set.
 
+This class has in PEAR status: %{_status}
+
 %description -l pl
 Prosta klasa do konwersji liczb miêdzy ró¿nymi systemami liczenia z
 konfigurowalnym zestawem cyfr.
+
+Ta klasa ma w PEAR status: %{_status}
 
 %prep
 %setup -q -c
