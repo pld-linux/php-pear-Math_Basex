@@ -3,7 +3,7 @@
 %define		_subclass	Basex
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Base X conversion class
-Summary(pl):	%{_class}_%{_subclass} -
+Summary(pl):	%{_class}_%{_subclass} - klasa konwersji miêdzy systemami liczenia Base X
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
@@ -20,14 +20,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Simple class for converting base set of numbers with a customize
 character base set.
 
+%description -l pl
+Prosta klasa do konwersji liczb miêdzy ró¿nymi systemami liczenia z
+konfigurowalnym zestawem cyfr.
+
 %prep
 %setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install %{_pearname}-%{version}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
