@@ -9,6 +9,7 @@ Summary(pl):	%{_class}_%{_subclass} - klasa konwersji miêdzy systemami liczenia 
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	3
+Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
