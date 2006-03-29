@@ -8,7 +8,7 @@ Summary:	%{_class}_%{_subclass} - Base X conversion class
 Summary(pl):	%{_class}_%{_subclass} - klasa konwersji miêdzy systemami liczenia Base X
 Name:		php-pear-%{_pearname}
 Version:	0.3
-Release:	3
+Release:	4
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
