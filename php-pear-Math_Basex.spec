@@ -5,7 +5,7 @@
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Base X conversion class
-Summary(pl.UTF-8):   %{_class}_%{_subclass} - klasa konwersji między systemami liczenia Base X
+Summary(pl.UTF-8):	%{_class}_%{_subclass} - klasa konwersji między systemami liczenia Base X
 Name:		php-pear-%{_pearname}
 Version:	0.3
 Release:	4
@@ -36,7 +36,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
