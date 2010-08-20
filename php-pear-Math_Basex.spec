@@ -7,13 +7,13 @@
 Summary:	%{_class}_%{_subclass} - Base X conversion class
 Summary(pl.UTF-8):	%{_class}_%{_subclass} - klasa konwersji między systemami liczenia Base X
 Name:		php-pear-%{_pearname}
-Version:	0.3
-Release:	5
+Version:	0.3.1
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	4cfe8184e596c0d2fb399581e457d4ce
+# Source0-md5:	80d0ba3e86fd857e281a474727dd00c3
 URL:		http://pear.php.net/package/Math_Basex/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -39,8 +39,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
